@@ -119,7 +119,12 @@
   text-align: center;
 
 }
+li {
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  text-align: center;
 
+}
 /*.hero {
   background-image:
     linear-gradient(to bottom, rgba(0,0,0,0.25) 100%, rgba(0,0,0,0.25) 100%),
@@ -173,12 +178,9 @@ clear:both;
 }
 .products {
   text-align: center;
-  font-family: sans-serif;
+  font-family: playfair display, sans-serif;
   display:inline-block;
   margin:auto;
-  border-top: 1px solid #d7d7d7;
-
-
 }
 
 li {
@@ -243,6 +245,7 @@ clear:both;
 
 h2 {
   text-align:center;
+  border-top: 1px solid #d7d7d7;
 }
 
 @media screen and (min-width: 600px){
