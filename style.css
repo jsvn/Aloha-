@@ -53,18 +53,18 @@
 
 @font-face {
     font-family: 'raleway';
-    src: url(fonts/'raleway-lightitalic-webfont.woff2') format('woff2'),
-         url(fonts/'raleway-lightitalic-webfont.ttf') format('truetype'),
-         url(fonts/'raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
+    src: url('fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/raleway-lightitalic-webfont.ttf') format('truetype'),
+         url('fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'raleway';
-    src: url(fonts/'raleway-medium-webfont.woff2') format('woff2'),
-         url(fonts/'raleway-medium-webfont.ttf') format('truetype'),
-         url(fonts/'raleway-medium-webfont.svg#ralewaymedium') format('svg');
+    src: url('fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
     font-weight: bold;
     font-style: normal;
 
@@ -72,9 +72,9 @@
 
 @font-face {
     font-family: 'raleway';
-    src: url(fonts/'raleway-mediumitalic-webfont.woff2') format('woff2'),
-         url(fonts/'raleway-mediumitalic-webfont.ttf') format('truetype'),
-         url(fonts/'raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
+    src: url('fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
+         url('fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
+         url('fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
     font-weight: bold;
     font-style: italic;
   }
@@ -95,7 +95,7 @@ strong {
 }
 
 html {
-	font-size: 14px;ø
+	font-size: 14px;
 }
 
 header {
@@ -157,7 +157,7 @@ li {
 
 }*/
 
-.clearfix:before;
+.clearfix:before,
 .clearfix:after {
 content:" ";
 display: table;
@@ -205,7 +205,7 @@ clear:both;
   .hc_aloha {
   	font-size: 1.3rem;
   	text-align: center;
-  	line-height: 200%;
+  	line-height: 150%;
   	font-family: 'raleway';
   	margin: 0 4%;
   }
@@ -219,7 +219,6 @@ clear:both;
   display:inline-block;
   position: relative;
   margin: 0 auto;
-  width: 1400px 300px;
   align-content: center;
 
 }
@@ -229,7 +228,6 @@ ul {
   height: 300px;
   padding-right: 100px;
 }
-
 .products li {
   display: inline-block;
   margin: auto;
@@ -243,25 +241,45 @@ h2{
   margin: 50px 0 50px 0;
 }
 img {
+  margin-top: 50px;
   width: 265px;
   align-content: center;
-
+  display: inline-block;
 }
 
+.itm_category {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: .8rem;
+  padding: 00px;
+}
+
+.itm_price {
+	font-weight: bold;
+}
+
+.itm_name {
+	color: #e2574c;
+	font-size: 1.8rem;
+	font-family: 'playfair_display';
+}
 
 .updates {
   background-image:
     url('images/wave-bkgd.jpg');
     background-position: bottom;
   background-repeat: no-repeat;
-  background-color: white;
-  font-family: sans-serif;
   margin-bottom: 8px;
   height: 325px;
   color: white;
   padding-top: 20px;
   text-align: center;
   min-width: 480px;
+}
+
+.updates_container {
+	margin: 40px auto;
+
 }
 
 .sign{
@@ -275,8 +293,8 @@ img {
   font-family: 'raleway';
 	font-size: 1.3rem;
 	text-align: center;
-	line-height: 200%;
-	padding: 20px 4%;
+	line-height: 100%;
+	padding: 5px 3%;
 	text-shadow: 1px 1px 10px rgba(0,0,0,.5);
   }
 
@@ -328,18 +346,11 @@ img {
 
 .subscribe_button:hover {
 	transition: 0.5s;
-	background-color: #b64036;
 	border-color: #b64036;
 	transform: scale(.95);
 	outline-width: 0;
 }
 /*-------------------------------------------------------Footer Section || Social Media*/
-
-.img {
-    width:100px;
-    vertical-align: middle; /* add this */
-  margin-right: : 30px;
-}
 
 .ahola{
   float: left;
@@ -353,7 +364,7 @@ color: #e2574c;
   	color: #e2574c;
   }
 
-.clearfix:before;
+
 .clearfix:after {
 content:" ";
 display: table;
@@ -397,7 +408,6 @@ h2 {
   	transition: .3s;
   }
 
-
   .email:hover {
   	transition: .3s;
   	color: #b64036;
@@ -426,16 +436,22 @@ h2 {
 
   .social_media ul {
   	overflow: hidden;
-  	margin: 50px auto 0 auto;
+  	margin: 40px auto 0 auto;
   }
 
   .social_media li {
-  	display: inline-block;
-  	font-size: 1.1rem;
-    float: right;
+  	font-size: 1rem;
   }
 
+  /*-----------Below are text for the Logos --> its display in when it reaches 600px and more*/
+
+  .sm_text {
+  	display: none;
+  	font-family: 'raleway';
+  	color: white;
+  }
   	/*--------max container is used to set width on certain elements----------*/
   	.max_container {
   		max-width: 700px;
   		margin: 0 auto;
+    }
