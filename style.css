@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'playfair_displaybold';
+    font-family: 'playfair_display';
     src: url('fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
          url('fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
          url('fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
@@ -10,32 +10,26 @@
 
 
 @font-face {
-    font-family: 'playfair_displaybold_italic';
+    font-family: 'playfair_display';
     src: url('fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
          url('fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
          url('fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
     font-weight: bold;
-    font-style: normal;
+    font-style: italic;
 
 }
 
-
-
 @font-face {
-    font-family: 'playfair_displayitalic';
+    font-family: 'playfair_display';
     src: url('fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
          url('fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
          url('fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
     font-weight: normal;
-    font-style: normal;
-
+    font-style: italic;
 }
 
-
-
-
 @font-face {
-    font-family: 'playfair_displayregular';
+    font-family: 'playfair_display';
     src: url('fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
          url('fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
          url('fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
@@ -45,10 +39,10 @@
 }
 
 
-
+/*raleway*/
 
 @font-face {
-    font-family: 'ralewaylight';
+    font-family: 'raleway';
     src: url('fonts/raleway-light-webfont.woff2') format('woff2'),
          url('fonts/raleway-light-webfont.ttf') format('truetype'),
          url('fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
@@ -58,16 +52,16 @@
 }
 
 @font-face {
-    font-family: 'ralewaylight_italic';
+    font-family: 'raleway';
     src: url(fonts/'raleway-lightitalic-webfont.woff2') format('woff2'),
          url(fonts/'raleway-lightitalic-webfont.ttf') format('truetype'),
          url(fonts/'raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'ralewaymedium';
+    font-family: 'raleway';
     src: url(fonts/'raleway-medium-webfont.woff2') format('woff2'),
          url(fonts/'raleway-medium-webfont.ttf') format('truetype'),
          url(fonts/'raleway-medium-webfont.svg#ralewaymedium') format('svg');
@@ -77,76 +71,94 @@
 }
 
 @font-face {
-    font-family: 'ralewaymedium_italic';
+    font-family: 'raleway';
     src: url(fonts/'raleway-mediumitalic-webfont.woff2') format('woff2'),
          url(fonts/'raleway-mediumitalic-webfont.ttf') format('truetype'),
          url(fonts/'raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
     font-weight: bold;
-    font-style: normal;
+    font-style: italic;
+  }
+/*-----------------------------------------------------------------Global Styles*/
 
+.container{
+	min-width: 480px;
+	margin: 0 auto;
+   border-top: 1px solid #d7d7d7;
 }
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+html {
+	font-size: 14px;ø
+}
+
+header {
+  height: 80px;
+}
+
+body {
+	color: #2d2d2d;
+  margin:0 auto;
+}
+
+/*-----------------------------------------------------------------Navigation Bar*/
+
+
 .logo {
   float: left;
-  width: 150px;
-  height: auto;
-  margin-left: auto;
-  margin-top: : 20px
-  margin-bottom: 21px
-  margin-right: 15px
-
+  width: 160px;
   }
 .cart {
   float: right;
-  width: 50px;
-  display: inline-block;
-
+  width: 70px;
 }
+
+.navitems {
+	height: 60px;
+	margin: 20px 30px;
+	transition: .5s;
+}
+.navbar .navitems:hover {
+	transition: 0.5s;
+	transform: scale(1.1);
+	margin: 30px;
+}
+
+/*----------------------------------------------------------------Hero Background Section*/
+
 .collection {
-  font-size: 30px;
-  color: white;
-  margin-left: auto;
-  text-align:center;
+  font-size: 1.5rem;
+  font-family: 'raleway';
+  font-weight: bold;
+  margin-right: 50px;
+  padding-right: 150px;
+  font-family: 'playfair_display';
+
 }
 .spring {
-  font-size: 40px;
-  font-style: Raleway italic, playfair bold;
-  color: white;
-  text-align:center;
-  margin-left: auto;
-  padding-left: 60px
+  margin-top: 1.5rem;
+  font-size: 5rem;
+  font-family: 'playfair_display';
+  color: white
 }
-.hero-title {
-  text-align: center;
 
-}
 li {
   display: inline-block;
   margin: 0 auto 0 auto;
   text-align: center;
-
 }
 /*.hero {
-  background-image:
-    linear-gradient(to bottom, rgba(0,0,0,0.25) 100%, rgba(0,0,0,0.25) 100%),
-    url("images/banner-girl.png"),
-    url("images/flower-bkgd.jpg");
-  background-size:  contain, 235px, 800px;
-  background-position: top center ,top center ,top center;
-  background-repeat: no-repeat,no-repeat, repeat;
-  background-color: white;*/
-
-  /*clearfix:before,
-  .clearfix:after{}
-  margin:0 auto;
-  padding-bottom: : 100px;
-  text-align: center;
-  font-family: sans-serif;
-  height: 500px;
 
 }*/
 
 .clearfix:before;
-.clearfix: after {
+.clearfix:after {
 content:" ";
 display: table;
 clear:both;
@@ -155,37 +167,88 @@ clear:both;
 .hero{
   height:530px;
   width:100%;
-  margin-top:5rem;
   text-align: center;
+  position: relative;
   background:linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
   url("images/banner-girl.png")no-repeat center 50px,
   url("images/flower-bkgd.jpg")repeat-x center;
-  background-size: contain, contain;
+  background-size: cover, contain, cover;
 }
+.hero-title {
+	color: white;
+	position: relative;
+	top: 200px;
+  text-align: center;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
 
 /*} url(../images/banner-girl.png) no-repeat center 60px, url(../images/flower-bkgd.jpg) repeat-x center top;*/
+/*------------------------------------------Hand-Crafted Section || style = Hand Crafted*/
+.hc {
+  border: 1px solid #d7d7d7;
+	border-style: none none solid none;
+	overflow: hidden;
+}
+
+.hc_style {
+  	margin: 50px 0 50px 0;
+    height: 150px;
+  }
+
+.hc_hand {
+  	font-size: 3rem;
+  	text-align: center;
+  	margin-bottom: 20px;
+  	font-family: 'playfair_display';
+  }
+  .hc_aloha {
+  	font-size: 1.3rem;
+  	text-align: center;
+  	line-height: 200%;
+  	font-family: 'raleway';
+  	margin: 0 4%;
+  }
+
+/*------------------------------Most-Loved Products Section || mlp = Most Loved Products*/
 
 
-.style {
-  margin: 40px;
-  text-align: center;
-  font-family: sans-serif;
-  border-bottom: 1px solid #d7d7d7;
-}
-.contain {
-  width: 1280px;
-  text-align: center;
-}
 .products {
   text-align: center;
-  font-family: playfair display, sans-serif;
+  font-family: 'playfair_display', sans-serif;
   display:inline-block;
-  margin:auto;
+  position: relative;
+  margin: 0 auto;
+  width: 1400px 300px;
+  align-content: center;
+
 }
 
-li {
-  display: inline-block;
+ul {
+  width: 1200px;
+  height: 300px;
+  padding-right: 100px;
 }
+
+.products li {
+  display: inline-block;
+  margin: auto;
+  padding: 0px;
+
+}
+h2{
+  text-align: center;
+	font-size: 3rem;
+	font-family: 'playfair_display';
+  margin: 50px 0 50px 0;
+}
+img {
+  width: 265px;
+  align-content: center;
+
+}
+
+
 .updates {
   background-image:
     url('images/wave-bkgd.jpg');
@@ -196,25 +259,86 @@ li {
   margin-bottom: 8px;
   height: 325px;
   color: white;
-padding-top: 20px;
-text-align: center;
-border-top: 1px solid #d7d7d7;
-
+  padding-top: 20px;
+  text-align: center;
+  min-width: 480px;
 }
 
-{}
-button {
-  color: red;
-  font-weight: bold;
+.sign{
+  	text-align: center;
+	font-size: 3rem;
+	font-family: 'playfair_display';
+	text-shadow: 4px 4px 15px rgba(0,0,0,.5);
+}
 
+.stay{
+  font-family: 'raleway';
+	font-size: 1.3rem;
+	text-align: center;
+	line-height: 200%;
+	padding: 20px 4%;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.5);
+  }
+
+.subscribe {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
-.social {
-    float:right;
-    display:list-item;
+
+.inputEmail {
+	transition: .4s;
+	width:	60%;
+	height: 30px;
+	position: relative;
+	left: 18%;
+	padding: 10.5px;
+	border-style: none;
+	border-color: white;
+	border-radius: 30px;
+	font-family: 'raleway';
+	font-size: 1rem;
+	text-indent: 5%;
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.3);
 }
+
+.inputEmail:focus {
+	transition: .5s;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	outline-width: 0;
+	transform: scale(1.02);
+}
+
+.subscribe_button {
+	transition: .3s;
+	cursor: pointer;
+	min-width: 20%;
+	color: white;
+	background-color: #e2574c;
+	height: 40px;
+	margin: 5.5px 0 5.5px 0;
+	border:	solid 10px #e2574c;
+	border-radius: 30px;
+	position: relative;
+	right: 20%;
+	font-family: 'raleway';
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.subscribe_button:hover {
+	transition: 0.5s;
+	background-color: #b64036;
+	border-color: #b64036;
+	transform: scale(.95);
+	outline-width: 0;
+}
+/*-------------------------------------------------------Footer Section || Social Media*/
+
 .img {
     width:100px;
     vertical-align: middle; /* add this */
+  margin-right: : 30px;
 }
 
 .ahola{
@@ -230,27 +354,88 @@ color: #e2574c;
   }
 
 .clearfix:before;
-.clearfix: after {
+.clearfix:after {
 content:" ";
 display: table;
 clear:both;
 }
-.footer {
-  background-color: #242424;
-    color: white;
-    font-family: 'Playfair Display', serif;
-    height: 300px;
 
-}
 
 h2 {
   text-align:center;
-  border-top: 1px solid #d7d7d7;
+
 }
 
 @media screen and (min-width: 600px){
 
 
-body{
+  footer {
+  	overflow: hidden;
+  	min-width: 480px;
+  	background: #242424;
+  	color: white;
+    height: 263px;
+  }
 
-}
+  .contact_us {
+  	font-family: 'playfair_display';
+  }
+
+  .foot_container {
+  	margin: 50px auto 50px auto;
+  	font-size: 1.3rem;
+  	line-height: 150%;
+  	text-align: center;
+  }
+
+  .address {
+  	color: #969696;
+  }
+
+  .email {
+  	color: white;
+  	transition: .3s;
+  }
+
+
+  .email:hover {
+  	transition: .3s;
+  	color: #b64036;
+  }
+
+  .social_media {
+  	transition: .2s;
+  	text-align: center;
+  }
+
+  .social {
+  	color: white;
+  	min-width: 30px;
+    float:right;
+  }
+
+  .social_media a:link {
+  	text-decoration: none;
+  }
+
+  .social_media :hover {
+  	transition: .2s;
+  	color: #b64036;
+  }
+
+
+  .social_media ul {
+  	overflow: hidden;
+  	margin: 50px auto 0 auto;
+  }
+
+  .social_media li {
+  	display: inline-block;
+  	font-size: 1.1rem;
+    float: right;
+  }
+
+  	/*--------max container is used to set width on certain elements----------*/
+  	.max_container {
+  		max-width: 700px;
+  		margin: 0 auto;
