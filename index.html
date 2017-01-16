@@ -1,109 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Aloha Apparel</title>
-       <link rel="stylesheet" href= "stye.css">
-       <script src="https://use.fontawesome.com/75f5ac9bf1.js"></script>
+
+     <link rel="stylesheet" href="reset.css">
+     <link rel="stylesheet" href= "style.css">
+     <script src="https://use.fontawesome.com/75f5ac9bf1.js"></script>
   </head>
 
   <body>
-    <header class= "clearfix">
-      <section>
-    <img class="logo" src="images/aloha-logo.svg" alt="logo">
-<img class="cart" src="images/cart-icon.svg" alt="cart" />
+
+    <!-- Navigation Bar-->
+
+    <header class= "navbar clearfix">
+
+        <img class="logo navitems" src="images/aloha-logo.svg" alt="logo">
+        <img class="cart navitems" src="images/cart-icon.svg" alt="cart" />
+
+    </header>
+
+    <!-- Hero Background Section -->
+
+  <section class="hero">
+      <div class="hero-title">
+        <h1 class="collection">New Collection</h1>
+        <h3 class="spring">Spring/Summer 2016</h3>
+      </div>
   </section>
-</header>
-<section>
-  <div class="hero">
 
-    <div class="hero-title">
-      <p class="collection">New Collection</p>
-      <p class="spring">Spring/Summer 2016</p>
-    </div>
+  <!--Hand-Crafted Section || hc style = Hand Crafted section -->
 
+  <section class="hc_style">
+    <div class="hc_container">
+    <h2 class="hc_hand"><em>Hand-Crafted</em> <strong> Styles</strong> </h2>
+    <p class="hc_aloha">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
   </div>
-</section>
-  <section class="style">
-    <h2 class="hand">Hand-Crafted Styles </h2>
-    <p class="aloha">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
-</section>
+  </section>
 
-<section>
-<div class="container">
-    <h2> Most-Loved Products </h2>
+  <!-- Most-Loved Products Section || mlp = Most Loved Products -->
 
-    <ul class="products">
-      <li>
-      <img src="images/stretch-knit-dress.jpg" alt="Image of knit dress" />
-      <p>Dresses</p>
-      <h3>Stretch Knit Dress</h3>
-      <p> $169.00 </p>
-</li>
-  <li>
-      <img src="images/cotton-blue-shirt.jpg" alt="Image of blue shirt" />
+  <section>
+    <div class="container">
+      <h2 class ="mlp"><em>Most-Loved</em> <strong>Products</strong></h2>
 
-    <p>Shirts</p>
-    <h3> Cotton Blue Shirt</h3>
-    <p>$89.00</p>
-</li>
-    <li>
-    <img src="images/checked-stretch-dress.jpg" alt="Image of checked stretch dress" />
-  <p>Dresses</p>
-  <h3> Checked Stretch Dress</h3>
-    <p>$129.00</p>
-  </li>
-<li>
-    <img src="images/blue-hipster-backpack.jpg" alt="Image of backpack" />
-  <p>Bags</p>
-  <h3> Blue Hipster Backpack</h3>
-  <p>$69.00</p>
-</li>
-</ul>
-</section>
+      <ul class="products">
+        <li>
+          <img class="li_img" src="images/stretch-knit-dress.jpg" alt="Image of knit dress" />
+          <p class="itm_category">Dresses</p>
+          <h3 class="itm_name">Stretch Knit Dress</h3>
+          <p class="itm_price">$169.00 </p>
+        </li>
+        <li>
+          <img class="li_img" src="images/cotton-blue-shirt.jpg" alt="Image of blue shirt" />
+          <p class="itm_category">Shirts</p>
+          <h3 class="itm_name">Cotton Blue Shirt</h3>
+          <p class="itm_price">$89.00</p>
+        </li>
+        <li>
+          <img class="li_img" src="images/checked-stretch-dress.jpg" alt="Image of checked stretch dress" />
+          <p class="itm_category">Dresses</p>
+          <h3 class="itm_name">Checked Stretch Dress</h3>
+          <p class="itm_price">$129.00</p>
+        </li>
+        <li>
+          <img class="li_img" src="images/blue-hipster-backpack.jpg" alt="Image of backpack" />
+          <p class="itm_category">Bags</p>
+          <h3 class="itm_name">Blue Hipster Backpack</h3>
+          <p class="itm_price">$69.00</p>
+        </li>
+      </ul>
+    </div>
+    </section>
 
-<section>
-<div class="updates">
-  <h2 class="sign"> Sign-up for Updates</h2>
+<!-- Sign Up Section || updates = Sign Up For Updates -->
+
+<section class= "updates">
+<div class="updates container">
+  <h2 class="sign"><em>Sign-up for</em> <strong>Updates</strong></h2>
     <p class="stay"> Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-    <form class="sign-up-form">
-                   <input type="email" name="your-email" size="25" value="" placeholder="Your Email">
-                   <input type="submit" name="subscribe" value="Subscribe">
-                </form>
-</div>   
+      <form class="subscribe max_container">
+					<input type="text" class="inputEmail" name="email" placeholder="Your Email">
+					<input type="submit" name="subscribe" value="Subscribe" class="subscribe_button">
+			</form>
+                   
+</div>
 </section>
 
-<footer class="footer">
-  <div class="container clearfix">
-    <p> © 2016 Aloha Apparel Co.</p>
-    <p>Powered by HTML and CSS.</p>
-    <p>604-604-6040. <a href="info@alohaapparel.com">info@alohapparel.com</a></p>
-<p>1490 W Broadway</p>
-<p>Vancouver, BC, Canada</p>
-</div>
+<!-- Footer Section || Social Media -->
 
-<div class="social">
-<ul>
-<i class="fa fa-facebook-official" aria-hidden="true"></i>
-<a href="Facebook.com">Facebook</a>
-<i class="fa fa-twitter-square" aria-hidden="true"></i>
-<a href="Twitter.com">Twitter</a>
-<i class="fa fa-instagram" aria-hidden="true"></i>
-<a href="Instagram.com">Instagram</a>
-<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-<a href="Pinterest.com">Pinterest</a>
-<i class="fa fa-google-plus-square" aria-hidden="true"></i>
-<a href="plus.google.com">Google+</a>
-</ul>
-</div>
-
-
-
-
-
-}
-</footer>
-
+	<footer class="clearfix">
+		<div class="foot_container clearfix container">
+			<div class="contact_us clearfix">
+				<p>&copy; 2016 Aloha Apparel Co.</p>
+				<p>Powered by HTML and CSS.</p>
+				<br>
+				<p>604-604-6040. <a class="email" href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+				<br>
+				<p class="address">1490 W Broadway</p>
+				<p class="address">Vancouver, BC, Canada</p>
+			</div>
+			<div class="social_media">
+				<ul>
+					<li><a href="#"><i class="social fa fa-facebook"></i><span class="sm_text">Facebook</span></a></li>
+					<li><a href="#"><i class="social fa fa-twitter"></i><span class="sm_text">Twitter</span></a></li>
+					<li><a href="#"><i class="social fa fa-instagram"></i><span class="sm_text">Instagram</span></a></li>
+					<li><a href="#"><i class="social fa fa-pinterest"></i><span class="sm_text">Pinterest</span></a></li>
+					<li><a href="#"><i class="social fa fa-google-plus"></i><span class="sm_text">Google</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
-
 </html>
+  
